@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.dashboard {
+  padding: 40px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+/* SEARCH */
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 12px;
+}
+
+.searchInput {
+  width: 500px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.searchButton {
+  padding: 14px 24px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background: #2563eb;
+}
+
+/* ANSWER FULL WIDTH */
+.answerPanel {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.answerPanel h2 {
+  margin-bottom: 20px;
+  color: #60a5fa;
+}
+
+/* Query */
+.queryBox {
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 4px solid #3b82f6;
+}
+
+/* Context */
+.contextBox {
+  background: #111827;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  border-left: 4px solid #10b981;
+}
+
+.contextBox p {
+  white-space: pre-wrap;
+}
+
+/* Relationships */
+.relationBox {
+  background: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #facc15;
+}
+
+.relationItem {
+  margin-bottom: 8px;
+  color: #facc15;
+  font-weight: 500;
+}
+
+/* GRAPH FULL WIDTH */
+.graphPanel {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.graphPanel h2 {
+  margin-bottom: 20px;
+  color: #60a5fa;
+}
+
+.placeholder {
+  color: #94a3b8;
+}

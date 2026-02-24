@@ -1,0 +1,56 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*.pkl
+*.log
+*.sqlite3
+
+# Virtual environments
+venv/
+env/
+kg_env/
+.venv/
+
+# Environment variables
+.env
+backend/.env
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# --------------------
+# Node
+# --------------------
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React / frontend build output
+build/
+dist/
+milestone4-dashboard/build/
+
+# --------------------
+# Dataset (only if large and not required in repo)
+# --------------------
+dataset/
+*.csv
+backend/dataset/
+
+# --------------------
+# OS files
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# IDE / Editor
+# --------------------
+.vscode/
+.idea/
