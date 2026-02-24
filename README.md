@@ -85,6 +85,7 @@ Make sure required CSV files are present before running ingestion pipelines.
 
 ---------------------------------------------------------------------------------------------
 ⚙️ Backend Setup = 
+
 cd backend
 
 pip install -r requirements.txt
@@ -92,8 +93,12 @@ pip install -r requirements.txt
 uvicorn app:app --reload
 
 ⚙️ Frontend Setup = 
+
+
 cd milestone4-dashboard
+
 npm install
+
 npm start
 
 ---------------------------------------------------------------------------------------------
@@ -101,10 +106,17 @@ npm start
 
 Create a .env file inside backend/ and configure:
 
-NEO4J_URI=
-NEO4J_USERNAME=
-NEO4J_PASSWORD=
-OPENAI_API_KEY=
+PINECONE_API_KEY=xyz
+
+PINECONE_INDEX=xyz
+
+NEO4J_URI=xyz
+
+NEO4J_USERNAME=xyz
+
+NEO4J_PASSWORD=xyz
+
+OLLAMA_MODEL=xyz
 
 ---------------------------------------------------------------------------------------------
 📜 License
