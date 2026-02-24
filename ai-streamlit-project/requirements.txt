@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+streamlit
+neo4j
+faiss-cpu
+pandas
+numpy
+python-dotenv

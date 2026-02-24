@@ -12,6 +12,7 @@ venv/
 env/
 kg_env/
 .venv/
+lib/
 
 # Environment variables
 .env
@@ -40,6 +41,9 @@ milestone4-dashboard/build/
 # Dataset (only if large and not required in repo)
 # --------------------
 dataset/
+data/
+*.pkl
+*.faiss
 *.csv
 backend/dataset/
 
