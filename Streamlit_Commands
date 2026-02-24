@@ -1,0 +1,37 @@
+Streamlit App
+
+1. Run Backend 
+
+Activate VE
+source kg_env/Scripts/activate
+
+In VE Run above Command
+python -m uvicorn app:app --reload
+
+Keep Backend Running
+
+2. Run Frontend
+
+
+Activate VE
+source kg_env/Scripts/activate
+
+In VE Run above Command
+streamlit run dashboard.py
+
+Open browser:
+
+http://127.0.0.1:8000
+
+
+You MUST see:
+
+{"status":"Backend is running"}
+
+
+Also check:
+
+http://127.0.0.1:8000/docs
+
+
+You should see Swagger UI 🎉
