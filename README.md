@@ -86,7 +86,9 @@ Make sure required CSV files are present before running ingestion pipelines.
 ---------------------------------------------------------------------------------------------
 ⚙️ Backend Setup = 
 cd backend
+
 pip install -r requirements.txt
+
 uvicorn app:app --reload
 
 ⚙️ Frontend Setup = 
