@@ -68,10 +68,20 @@ Component || Technology ||	Purpose
 -
 
 Embedding Model || SentenceTransformers || Convert text to dense vectors
+
+
 Vector Search || FAISS || Fast ANN similarity search
+
+
 Graph Database || Neo4j || Structured knowledge graph
+
+
 Backend API || FastAPI || Expose RAG endpoints
+
+
 UI || Streamlit || Interactive dashboard
+
+
 Language || Python || Core implementation
 
 
@@ -334,6 +344,3 @@ Enterprise Intelligence Extensions
 -
 
 Niranjan Patil
-
-
-Tell me which version you want 👌
