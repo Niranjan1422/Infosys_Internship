@@ -1,0 +1,169 @@
+🔹 STEP 8: Verify Graph in Neo4j (Cypher Queries)
+Query 1 — Count Nodes
+MATCH (n) RETURN labels(n), count(n);
+
+✅ Output
+Movie    500
+Person   1800
+
+Query 2 — Sample Relationships
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+RETURN p.name, m.title
+LIMIT 5;
+
+✅ Output
+Keanu Reeves | The Matrix
+Carrie-Anne Moss | The Matrix
+Tom Hanks | Forrest Gump
+
+Query 3 — Graph View (Neo4j Browser)
+MATCH (p)-[r]->(m) RETURN p, r, m LIMIT 50;
+
+MATCH (m:Movie)
+RETURN count(m);
+
+MATCH (m:Movie)
+RETURN m.id, m.title, m.release_date
+LIMIT 5;
+
+🔹 Cypher: Create Nodes & Relationships
+
+Run this directly in Neo4j Browser:
+
+// Movies
+MERGE (:Movie {title: "Toy Story"});
+MERGE (:Movie {title: "The Matrix"});
+MERGE (:Movie {title: "Inception"});
+
+// Genres
+MERGE (:Genre {name: "Animation"});
+MERGE (:Genre {name: "Comedy"});
+MERGE (:Genre {name: "Action"});
+MERGE (:Genre {name: "Sci-Fi"});
+MERGE (:Genre {name: "Thriller"});
+
+// Actors
+MERGE (:Actor {name: "Tom Hanks"});
+MERGE (:Actor {name: "Keanu Reeves"});
+MERGE (:Actor {name: "Leonardo DiCaprio"});
+
+🔹 Create Relationships
+// Toy Story
+MATCH (m:Movie {title:"Toy Story"}), (g:Genre {name:"Animation"})
+MERGE (m)-[:HAS_GENRE]->(g);
+
+MATCH (m:Movie {title:"Toy Story"}), (g:Genre {name:"Comedy"})
+MERGE (m)-[:HAS_GENRE]->(g);
+
+MATCH (a:Actor {name:"Tom Hanks"}), (m:Movie {title:"Toy Story"})
+MERGE (a)-[:ACTED_IN]->(m);
+
+// The Matrix
+MATCH (m:Movie {title:"The Matrix"}), (g:Genre {name:"Action"})
+MERGE (m)-[:HAS_GENRE]->(g);
+
+MATCH (m:Movie {title:"The Matrix"}), (g:Genre {name:"Sci-Fi"})
+MERGE (m)-[:HAS_GENRE]->(g);
+
+MATCH (a:Actor {name:"Keanu Reeves"}), (m:Movie {title:"The Matrix"})
+MERGE (a)-[:ACTED_IN]->(m);
+
+// Inception
+MATCH (m:Movie {title:"Inception"}), (g:Genre {name:"Sci-Fi"})
+MERGE (m)-[:HAS_GENRE]->(g);
+
+MATCH (m:Movie {title:"Inception"}), (g:Genre {name:"Thriller"})
+MERGE (m)-[:HAS_GENRE]->(g);
+
+MATCH (a:Actor {name:"Leonardo DiCaprio"}), (m:Movie {title:"Inception"})
+MERGE (a)-[:ACTED_IN]->(m);
+
+✅ STEP 2 — Verify with Queries (WITH OUTPUT)
+🔍 Query 1: Show Full Graph
+MATCH (n)-[r]->(m)
+RETURN n, r, m;
+
+
+✅ Output (Graph View)
+You’ll see:
+
+Movies in center
+
+Genres and actors connected
+
+Labeled relationships
+
+(This is your live demo moment)
+
+🔍 Query 2: Find Genres of a Movie
+MATCH (m:Movie {title:"Inception"})-[:HAS_GENRE]->(g)
+RETURN g.name;
+
+
+✅ Output:
+
+Sci-Fi
+Thriller
+
+🔍 Query 3: Find Movies by an Actor
+MATCH (a:Actor {name:"Keanu Reeves"})-[:ACTED_IN]->(m)
+RETURN m.title;
+
+
+✅ Output:
+
+The Matrix
+
+✅ STEP 3 — Slide-Ready Explanation (READ THIS)
+Slide: Graph Schema
+
+“We designed a graph schema with three entities: Movie, Actor, and Genre.
+Movies are connected to genres using HAS_GENRE and to actors using ACTED_IN relationships.”
+
+1️⃣ NEO4J SCREENSHOTS (VERY IMPORTANT)
+
+These screenshots are what evaluators LOVE.
+
+📸 Screenshot 1 — Full Graph View
+Run in Neo4j Browser:
+MATCH (n)-[r]->(m)
+RETURN n, r, m;
+
+What you’ll see:
+
+Movies in center
+
+Actors & Genres connected
+
+Relationship labels visible
+
+📷 Take screenshot of the graph canvas
+👉 This goes on “Output / Result” slide
+
+📸 Screenshot 2 — Query Result (Table)
+Run:
+MATCH (a:Actor)-[:ACTED_IN]->(m:Movie)
+RETURN a.name AS Actor, m.title AS Movie;
+
+
+📷 Screenshot of tabular output
+
+This proves:
+
+“Graph queries are working.”
+
+📸 Screenshot 3 — Specific Insight Query
+MATCH (m:Movie {title:"Inception"})-[:HAS_GENRE]->(g)
+RETURN g.name;
+
+
+📷 Screenshot of result:
+
+Sci-Fi
+Thriller
+
+
+This shows decision-oriented querying.
+
+
+📊 Neo4j automatically renders this as an interactive graph
