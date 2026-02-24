@@ -1,8 +1,11 @@
 #Infosys_SpringBoard_Internship_Project
+---------------------------------------------------------------------------------------------
 
 Enterprise Knowledge Graph & RAG-Based Intelligent Search Platform
+-
 
 📌 Overview
+-
 
 This project was developed during my internship to design and implement an Enterprise Knowledge Graph powered by LLM-based Entity Extraction, Semantic Search, and Retrieval-Augmented Generation (RAG).
 
@@ -11,6 +14,9 @@ The system enables intelligent search and graph-based exploration of enterprise 
 ---------------------------------------------------------------------------------------------
 
 🚀 Milestones
+-
+
+
 🔹 Milestone 1: Data Ingestion & Schema Design (Weeks 1–2)
 
 Built ingestion pipelines
@@ -18,6 +24,7 @@ Built ingestion pipelines
 Connected enterprise datasets
 
 Designed Neo4j graph schema
+
 
 🔹 Milestone 2: Entity Extraction & Graph Building (Weeks 3–4)
 
@@ -29,6 +36,7 @@ Stored graph in Neo4j
 
 Validated graph structure
 
+
 🔹 Milestone 3: Semantic Search & RAG (Weeks 5–6)
 
 Generated embeddings
@@ -39,6 +47,7 @@ Built semantic search pipeline
 
 Implemented Retrieval-Augmented Generation
 
+
 🔹 Milestone 4: Dashboard & Deployment (Weeks 7–8)
 
 Built interactive React dashboard
@@ -47,16 +56,22 @@ Graph visualization UI
 
 API integration
 
----------------------------------------------------------------------------------------------
-Full system deployment =
+Full system deployment 
 
-🏗 Project Structure
+---------------------------------------------------------------------------------------------
+
+🏗 Project Structure =
+-
+
 backend/                → FastAPI backend, graph & RAG services
+
 milestone4-dashboard/   → React frontend dashboard
+
 notebooks/              → Milestone research notebooks
 
 ---------------------------------------------------------------------------------------------
 🛠 Tech Stack
+-
 
 Python
 
@@ -74,6 +89,7 @@ Node.js
 
 ---------------------------------------------------------------------------------------------
 📂 Dataset Information
+-
 
 ⚠️ Dataset is NOT included in this repository due to size constraints.
 
@@ -85,6 +101,7 @@ Make sure required CSV files are present before running ingestion pipelines.
 
 ---------------------------------------------------------------------------------------------
 ⚙️ Backend Setup = 
+-
 
 cd backend
 
@@ -92,7 +109,8 @@ pip install -r requirements.txt
 
 uvicorn app:app --reload
 
-⚙️ Frontend Setup = 
+⚙️ Frontend Setup =
+-
 
 
 cd milestone4-dashboard
@@ -103,6 +121,7 @@ npm start
 
 ---------------------------------------------------------------------------------------------
 🔐 Environment Variables
+-
 
 Create a .env file inside backend/ and configure:
 
@@ -120,10 +139,13 @@ OLLAMA_MODEL=xyz
 
 ---------------------------------------------------------------------------------------------
 📜 License
+-
 
 This project is licensed under the MIT License.
 
 👤 Author
+-
 
 Niranjan Patil
+
 Infosys Internship Project
