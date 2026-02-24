@@ -1,0 +1,32 @@
+✅ Correct Way to Activate Virtual Environment
+🔹 If you are in Git Bash (MINGW64)
+
+Use forward slashes:
+
+source kg_env/Scripts/activate
+
+
+After Activation
+
+Run backend using:
+
+python -m uvicorn app:app --reload
+
+Step 2️⃣ Run uvicorn from backend folder
+../kg_env/Scripts/python -m uvicorn app:app --reload
+
+🚀 Alternative Method (Run From Root Folder)
+
+If you want to run from root folder instead:
+
+python -m uvicorn backend.app:app --reload
+Swagger Test : http://127.0.0.1:8000/docs
+test query : 
+{
+  "query": "Horror movies"
+}
+
+
+Notice:
+
+backend.app:app
