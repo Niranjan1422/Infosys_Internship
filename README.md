@@ -1,10 +1,10 @@
-# #Infosys_SpringBoard_Internship_Project
+#Infosys_SpringBoard_Internship_Project
 ---------------------------------------------------------------------------------------------
 
 Enterprise Knowledge Graph & RAG-Based Intelligent Search Platform
 -
 
-📌 Overview
+# 📌 Overview
 -
 
 This project was developed during my internship to design and implement an Enterprise Knowledge Graph powered by LLM-based Entity Extraction, Semantic Search, and Retrieval-Augmented Generation (RAG).
