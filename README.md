@@ -436,15 +436,25 @@ ________________________________________________________________________________
 # 🏗️ Final Future Architecture (Enterprise Target)
 
 Planned architecture:
+
 •	Frontend: Vercel
+
 •	Backend: Render
+
 •	LLM: Vertex AI
+
 •	Embeddings: OpenAI / Voyage
+
 •	Vector DB: Pinecone
+
 •	Graph DB: Neo4j
+
 •	Hybrid Search: Dense + BM25
+
 •	Agentic Routing Layer
+
 •	Evaluation Metrics
+
 •	Multi-layer Memory System
 _____________________________________________________________________________________________
 
