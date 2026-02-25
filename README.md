@@ -466,13 +466,11 @@ Enterprise-Ready AI Knowledge Graph & Intelligent Retrieval Platform
 with improved scalability, reliability, reasoning depth, and retrieval performance.
 
 ---------------------------------------------------------------------------------------------
-📜 License
--
+# 📜 License
 
 This project is licensed under the MIT License.
 
-👤 Author
--
+# 👤 Author
 
 Niranjan Patil
 
