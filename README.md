@@ -14,7 +14,7 @@ The system enables intelligent search and graph-based exploration of enterprise 
 # 🚀 Milestones
 
 
-🔹 Milestone 1: Data Ingestion & Schema Design (Weeks 1–2)
+🔹 Milestone 1: Data Ingestion & Schema Design 
 
 Built ingestion pipelines
 
@@ -23,7 +23,7 @@ Connected enterprise datasets
 Designed Neo4j graph schema
 
 
-🔹 Milestone 2: Entity Extraction & Graph Building (Weeks 3–4)
+🔹 Milestone 2: Entity Extraction & Graph Building 
 
 Applied LLM-based Named Entity Recognition
 
@@ -34,7 +34,7 @@ Stored graph in Neo4j
 Validated graph structure
 
 
-🔹 Milestone 3: Semantic Search & RAG (Weeks 5–6)
+🔹 Milestone 3: Semantic Search & RAG 
 
 Generated embeddings
 
@@ -45,7 +45,7 @@ Built semantic search pipeline
 Implemented Retrieval-Augmented Generation
 
 
-🔹 Milestone 4: Dashboard & Deployment (Weeks 7–8)
+🔹 Milestone 4: Dashboard & Deployment 
 
 Built interactive React dashboard
 
