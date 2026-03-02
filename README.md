@@ -408,7 +408,81 @@ Why Add Evaluation Layer
 •	Measures improvement after upgrades
 _____________________________________________________________________________________________
 
-# 8️⃣ Memory Architecture Expansion
+
+# 🚀 Future Scope: LangChain & Hugging Face Integration
+
+🔹 8️⃣ LangChain-Based RAG Orchestration
+
+The current system implements a custom-built Graph-Aware RAG pipeline using FastAPI, Pinecone/FAISS, Neo4j, and a local LLM. While this provides full architectural control, future versions will integrate LangChain to improve modularity, scalability, and maintainability.
+
+Planned LangChain enhancements include:
+-
+
+Replacing manual embedding + retrieval logic with LangChain Retrievers
+
+Implementing RetrievalQA chains for standardized RAG workflows
+
+Using structured PromptTemplates instead of manual prompt construction
+
+Converting Neo4j queries into LangChain Tools
+
+Introducing Agent-based orchestration for dynamic tool usage
+
+
+This will transform the current static RAG pipeline into a modular, tool-aware AI system capable of multi-step reasoning and enterprise-level orchestration.
+
+
+_____________________________________________________________________________________________
+
+🔹 9️⃣ Hugging Face Model Integration & Upgrade
+
+The current system uses:
+
+sentence-transformers/all-MiniLM-L6-v2
+
+for semantic embeddings. Future upgrades will leverage Hugging Face models for both embedding and generation layers.
+
+Planned Embedding Improvements:
+-
+
+all-mpnet-base-v2 (higher semantic accuracy)
+
+BAAI/bge-base-en-v1.5 (strong contextual search performance)
+
+Domain-specific fine-tuned embedding models
+
+
+These upgrades will improve retrieval precision and contextual matching.
+
+
+_____________________________________________________________________________________________
+
+Planned LLM Enhancements via Hugging Face:
+-
+
+Instead of relying solely on local LLM inference, future versions may integrate:
+
+Hugging Face Inference API
+
+Transformer-based models via transformers library
+
+Hugging Face-hosted instruction-tuned models
+
+
+Benefits:
+-
+
+Faster inference
+
+Better generation quality
+
+Improved stability
+
+Production scalability
+
+_____________________________________________________________________________________________
+
+# 🔟 Memory Architecture Expansion
 
 ✅ Current Implementation
 -
