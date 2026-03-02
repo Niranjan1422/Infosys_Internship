@@ -411,7 +411,7 @@ ________________________________________________________________________________
 
 # 🚀 Future Scope: LangChain & Hugging Face Integration
 
-🔹 8️⃣ LangChain-Based RAG Orchestration
+# 8️⃣ LangChain-Based RAG Orchestration
 
 The current system implements a custom-built Graph-Aware RAG pipeline using FastAPI, Pinecone/FAISS, Neo4j, and a local LLM. While this provides full architectural control, future versions will integrate LangChain to improve modularity, scalability, and maintainability.
 
@@ -434,7 +434,7 @@ This will transform the current static RAG pipeline into a modular, tool-aware A
 
 _____________________________________________________________________________________________
 
-🔹 9️⃣ Hugging Face Model Integration & Upgrade
+# 9️⃣ Hugging Face Model Integration & Upgrade
 
 The current system uses:
 
